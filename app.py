@@ -31,13 +31,13 @@ def predictt():
             output = output.astype(int)
 
             if output[0][0] == 1:
-                res_val = "DRUSEN"
+                res_val = "YOU HAVE DRUSEN"
             if output[0][1] == 1:
-                res_val = "CNV"
+                res_val = "YOU HAVE CNV"
             if output[0][2] ==1:
                 res_val = "YOU ARE NORMAL"
             if output[0][3] == 1:
-                res_val = "DME"
+                res_val = "YOU HAVE DME"
     
     return render_template('index.html', prediction_text='{}'.format(res_val))
 ############################################################
